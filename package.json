@@ -1,0 +1,50 @@
+{
+  "name": "@idecardo/vue-croppie",
+  "version": "0.1.0",
+  "description": "A Croppie wrapper for VueJS 2",
+  "main": "dist/vue-croppie.umd.js",
+  "module": "dist/vue-croppie.esm.js",
+  "unpkg": "dist/vue-croppie.min.js",
+  "keywords": [
+    "vue",
+    "vuejs",
+    "image",
+    "croppie"
+  ],
+  "scripts": {
+    "build": "npm run build:unpkg & npm run build:es & npm run build:umd",
+    "build:umd": "rollup --config build/rollup.config.js --format umd --file dist/vue-croppie.umd.js",
+    "build:es": "rollup --config build/rollup.config.js --format es --file dist/vue-croppie.esm.js",
+    "build:unpkg": "rollup --config build/rollup.config.js --format iife --file dist/vue-croppie.min.js",
+    "publish": "cross-env NODE_ENV=production npm run build"
+  },
+  "dependencies": {
+    "croppie": "^2.6.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.7.0",
+    "cross-env": "^5.2.0",
+    "rollup": "^0.65.2",
+    "rollup-plugin-babel": "^3.0.7",
+    "rollup-plugin-commonjs": "^9.1.6",
+    "rollup-plugin-node-resolve": "^3.4.0",
+    "rollup-plugin-uglify-es": "0.0.1",
+    "rollup-plugin-vue": "^4.3.2",
+    "vue": "^2.5.17",
+    "vue-template-compiler": "^2.5.17"
+  },
+  "author": "Ivan Rey De Cardo",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/idecardo/vue-croppie"
+  },
+  "bugs": {
+    "url": "https://github.com/idecardo/vue-croppie/issues"
+  },
+  "homepage": "https://github.com/idecardo/vue-croppie#readme"
+}
