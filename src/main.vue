@@ -1,5 +1,7 @@
-<style src="croppie/croppie.css"></style>
-
+<template>
+    <style src="croppie/croppie.css"></style>
+    <p>sadsadas</p>
+</template>
 <script>
     import { Croppie } from 'croppie'
     import emitter from 'tiny-emitter/instance'
@@ -148,7 +150,7 @@
             let dataAttributes = {
                 attrs: { 'data-croppie': 'container' },
             };
-
+            debugger
             if (this.$scopedSlots.default !== undefined) {
                 dataAttributes = [
                     this.$scopedSlots.default({
