@@ -150,10 +150,9 @@
             let dataAttributes = {
                 attrs: { 'data-croppie': 'container' },
             };
-            console.log(this.$scopedSlots)
             if (this.$scopedSlots.default !== undefined) {
                 dataAttributes = [
-                    this.$scopedSlots.default({
+                    this.$scopedSlots.default = ({
                         bind: this.bind,
                         destroy: this.destroy,
                         get: this.get,
