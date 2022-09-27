@@ -2,8 +2,12 @@
 
 <script>
     import { Croppie } from 'croppie'
+    import emitter from 'tiny-emitter/instance'
+
+    $emit: (...args) => emitter.emit(...args)
 
     export default {
+        emits: ['update', 'result'],
         props: {
             boundary: {
                 type: Object,

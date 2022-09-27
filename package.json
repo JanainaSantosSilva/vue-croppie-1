@@ -19,7 +19,8 @@
     "publish": "cross-env NODE_ENV=production npm run build"
   },
   "dependencies": {
-    "croppie": "^2.6.2"
+    "croppie": "^2.6.2",
+    "tiny-emitter": "^2.1.0"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
@@ -34,7 +35,7 @@
     "rollup-plugin-node-resolve": "^3.4.0",
     "rollup-plugin-uglify-es": "0.0.1",
     "rollup-plugin-vue": "^4.3.2",
-    "vue": "^2.5.17",
+    "vue": "^3.0.0",
     "vue-template-compiler": "^2.5.17"
   },
   "author": "Ivan Rey De Cardo",
